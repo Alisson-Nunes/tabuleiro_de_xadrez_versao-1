@@ -140,7 +140,7 @@ function inicia_jogo(){
             x = movimenta['selecionada']['x'];
             y = movimenta['selecionada']['y'];
     
-            document.getElementById('t'+x+y).style.backgroundColor = "#3C9"; //muda cor de fundo
+        /*AQUI1*/    document.getElementById('t'+x+y).style.backgroundColor = "#3C9"; //muda cor de fundo
             possiveis[c] = "t"+x+y; c++;
     
     ///////////////////////////////////////////////////////////////////////////////////PEAO////////////////////////////////
@@ -257,7 +257,7 @@ function inicia_jogo(){
     
     function possivel(px,py){
             if(px>0 && px <9 && py>0 && py <9 && peca[px][py]['cor']!= movimenta['selecionada']['cor']){
-                document.getElementById('t'+(px)+(py)).style.backgroundColor = "#3C9"; //muda cor de fundo
+            /*AQUI2*/ document.getElementById('t'+(px)+(py)).style.backgroundColor = "#3C9"; //muda cor de fundo
                 possiveis[c] = "t"+(px)+(py); c++;
                 
                 if(!peca[px][py]['peca']){
